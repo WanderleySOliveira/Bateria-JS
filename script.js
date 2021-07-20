@@ -1,9 +1,9 @@
 document.body.addEventListener('keyup', (event)=> {
-    playSound(event.code.toLocaleLowerCase())
+    playSound(event.code.toLowerCase()) // Evento de click para a tela inteira, convertido para lowercase para utilização nos parametros.     
 })
 
 document.querySelector('.composer button').addEventListener('click', () =>{
-    let song = document.querySelector('#input').value; // mesma coisa que document.getElementByID
+    let song = document.querySelector('#input').value; // mesmo que document.getElementByID
 
     if(song){
         let songArray = song.split('');
